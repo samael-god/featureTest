@@ -1,3 +1,4 @@
+let container = document.querySelector('.grid');
 let cells = document.querySelectorAll('.grid-cell');
 let countainerWidth = document.querySelector('.grid').offsetWidth;
 let countainerHeight = document.querySelector('.grid').offsetHeight;
@@ -25,3 +26,20 @@ function changeBg(){
     })
 }
 changeBg();
+
+function dragHandler(ev){
+    localStorage.setItem('position', ev.target.style.backgroundPosition);
+}
+function dragoverHandler(ev) {
+    ev.preventDefault();
+    ev.dataTransfer.dropEffect = "move";
+}
+function dropHandler(ev) {
+    ev.preventDefault();
+    console.log(localStorage.getItem('position'));
+    ev.target.style.backgroundPosition = localStorage.getItem('position');
+}
+
+function dragEndHandler(ev){
+    // ev.target.style.background = 'red';
+}

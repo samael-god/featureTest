@@ -8,10 +8,10 @@
 </head>
 <body>
 <div class="grid">
-    <div class="grid-cell"></div>
-    <div class="grid-cell"></div>
-    <div class="grid-cell"></div>
-    <div class="grid-cell"></div>
+    <div class="grid-cell"  draggable="true" ondragend="dragEndHandler(event)" ondrag="dragHandler(event)"></div>
+    <div class="grid-cell"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <div class="grid-cell" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <div class="grid-cell" draggable="true" ondragend="dragEndHandler(event)"></div>
     <div class="grid-cell"></div>
     <div class="grid-cell"></div>
     <div class="grid-cell"></div>
