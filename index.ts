@@ -1,8 +1,3 @@
 function test() {
-
-
-
-
-
     return true;
 }
