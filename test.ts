@@ -5,3 +5,5 @@ function helloWorld() {
 
     return true;
 }
+
+function hi() {}
