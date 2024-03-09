@@ -7,3 +7,5 @@ function helloWorld() {
 }
 
 function hi() {}
+
+hi();
